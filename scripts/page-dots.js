@@ -1,5 +1,6 @@
 $(document).ready(function() {
-//	$('#dot-link1').addClass('selected');
+	$('#dot-link1').addClass('selected');
+	$('.meta1').addClass('appear');
 	
 	$(function() {
 		$('#dot-link1').click(function(){
