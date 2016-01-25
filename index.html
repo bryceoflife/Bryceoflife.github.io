@@ -196,6 +196,42 @@
 				</div>
 			</div>
 
+			<!--preload images-->
+			<div class="hidden">
+				<script type="text/javascript">
+					<!--//--><![CDATA[//><!--
+						var images = new Array()
+						function preload() {
+							for (i = 0; i < preload.arguments.length; i++) {
+								images[i] = new Image()
+								images[i].src = preload.arguments[i]
+							}
+						}
+					preload(
+						"http://http://bryced.me/images/card/hero-amore.jpg",
+						"http://http://bryced.me/images/card/hero-branding.jpg",
+						"http://http://bryced.me/images/card/hero-downtime.jpg",
+						"http://http://bryced.me/images/card/hero-gon.jpg",
+						"http://http://bryced.me/images/card/hero-kate.jpg",
+						"http://http://bryced.me/images/card/hero-nubko.jpg",
+						"http://http://bryced.me/images/card/hero-photography.jpg",
+						"http://http://bryced.me/images/card/hero-redwood.jpg",
+						"http://http://bryced.me/images/card/hero-steve.jpg",
+						
+						"http://http://bryced.me/images/hero/hero-amore.jpg",
+						"http://http://bryced.me/images/hero/hero-branding.jpg",
+						"http://http://bryced.me/images/hero/hero-downtime.jpg",
+						"http://http://bryced.me/images/hero/hero-gon.jpg",
+						"http://http://bryced.me/images/hero/hero-kate.jpg",
+						"http://http://bryced.me/images/hero/hero-nubko.jpg",
+						"http://http://bryced.me/images/hero/hero-photography.jpg",
+						"http://http://bryced.me/images/hero/hero-redwood.jpg",
+						"http://http://bryced.me/images/hero/hero-steve.jpg",
+					)
+					//--><!]]>
+				</script>
+			</div>
+
 			<!--Section - Work -->
 			<span class="anchor" id="anchor--work"></span>
 			<div class="work--background ">
