@@ -1054,7 +1054,9 @@
 	width: 12.5em;
 	margin: 1em auto 2em;
 	opacity: 0;
-	
+}
+
+.animate .films--position-indicator{
 	animation: animate-dots .4s 4s ease-in-out;
 	animation-fill-mode: forwards;
 }
