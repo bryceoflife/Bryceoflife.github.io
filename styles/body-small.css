@@ -1053,6 +1053,15 @@
 .films--position-indicator {
 	width: 12.5em;
 	margin: 1em auto 2em;
+	opacity: 0;
+	
+	animation: animate-dots .4s 4s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animate-dots {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
 
 .selected .page-dot {

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#dot-link1').addClass('selected');
+//	$('#dot-link1').addClass('selected');
 	
 	$(function() {
 		$('#dot-link1').click(function(){
