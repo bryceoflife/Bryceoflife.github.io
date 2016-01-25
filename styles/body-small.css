@@ -15,7 +15,7 @@
 	-moz-transition: all 0.1s ease-in-out;
 	-ms-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
-	
+
 	opacity: 1;
 	width: 4em;
 	height: 4em;
@@ -456,7 +456,7 @@
 	column-count: 1;
 
 	margin-top: 3em;
-	
+
 }
 
 .text-col1 {
@@ -604,7 +604,7 @@
 .project-frame {
 	position: relative;
 	/*	top: 2.5em;*/
-/*		margin-bottom: -9em;*/
+	/*		margin-bottom: -9em;*/
 	z-index: 100;
 	height: 11.5em;
 }
@@ -1479,7 +1479,7 @@
 	background-color: rgba(255, 255, 255, .98);
 	z-index: 999;
 	width: 100%;
-	
+
 	animation: imprint-in .5s ease-in-out;
 	animation-fill-mode: forwards;
 }
@@ -1515,7 +1515,7 @@
 	-moz-transition: all .3s ease-in-out; /* Firefox */
 	-ms-transition: all .3s ease-in-out; /* Microsoft */
 	transition: all .2s ease-in-out;
-	
+
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -1536,3 +1536,28 @@
 	padding: 6px;
 }
 
+/*Preload*/
+
+body:after{
+	display:none;
+	content: 
+		url(../images/jpg/card/hero-amore.jpg)
+		url(../images/jpg/card/hero-branding.jpg)
+		url(../images/jpg/card/hero-downtime.jpg)
+		url(../images/jpg/card/hero-gon.jpg)
+		url(../images/jpg/card/hero-kate.jpg)
+		url(../images/jpg/card/hero-nubko.jpg)
+		url(../images/jpg/card/hero-photography.jpg)
+		url(../images/jpg/card/hero-redwood.jpg)
+		url(../images/jpg/card/hero-steve.jpg)
+		
+		url(../images/jpg/hero/hero-amore.jpg)
+		url(../images/jpg/hero/hero-branding.jpg)
+		url(../images/jpg/hero/hero-downtime.jpg)
+		url(../images/jpg/hero/hero-gon.jpg)
+		url(../images/jpg/hero/hero-kate.jpg)
+		url(../images/jpg/hero/hero-nubko.jpg)
+		url(../images/jpg/hero/hero-photography.jpg)
+		url(../images/jpg/hero/hero-redwood.jpg)
+		url(../images/jpg/hero/hero-steve.jpg);
+}
