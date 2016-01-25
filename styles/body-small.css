@@ -904,6 +904,71 @@
 	background-position: center;
 }
 
+/* Active for mobile*/
+
+.work1:active + .card1 {
+	background-image: url(../images/jpg/card/hero-downtime.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work2:active + .card2 {
+	background-image: url(../images/jpg/card/hero-redwood.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work3:active + .card3 {
+	background-image: url(../images/jpg/card/hero-gon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work4:active + .card4 {
+	background-image: url(../images/jpg/card/hero-kate.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work5:active + .card5 {
+	background-image: url(../images/jpg/card/hero-steve.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work6:active + .card6 {
+	background-image: url(../images/jpg/card/hero-amore.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work7:active + .card7 {
+	background-image: url(../images/jpg/card/hero-nubko.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work8:active + .card8 {
+	background-image: url(../images/jpg/card/hero-photography.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.work9:active + .card9 {
+	background-image: url(../images/jpg/card/hero-branding.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 /*Change meta white*/
 .work1:hover + .card1 > h3, .work1:hover + .card1 > h4,
 .work2:hover + .card2 > h3, .work2:hover + .card2 > h4,
