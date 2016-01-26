@@ -1009,7 +1009,7 @@
 }
 
 /*Change Image color*/
-.work1 + .card1 > img {
+.work1:hover + .card1 > img {
 	content: url(../images/png/thumb_downtime_hover.png);
 }
 
