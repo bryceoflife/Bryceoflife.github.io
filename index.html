@@ -53,11 +53,11 @@
 			/*SVG*/
 			.frame{width:100%;height:150vh}
 
-			.elephant{opacity:0;position:fixed;margin:0 auto;top:15vh;left:0;right:0;bottom:0;width:70%;max-width:480px;min-height:200px;height:50vh;z-index:-1;animation:fadein 3s 1s ease-in-out;animation-fill-mode:forwards}
+			.elephant{opacity:0;position:fixed;margin:0 auto;top:15vh;left:0;right:0;bottom:0;width:70%;max-width:480px;min-height:200px;height:50vh;z-index:-1;animation:fadein 3s 2s ease-in-out;animation-fill-mode:forwards}
 
 			@keyframes fadein{from{opacity:0}to{opacity:1}}
 
-			.path{stroke-dashoffset:0;stroke-dasharray:6373;animation:drawin 2.4s 1.2s ease-in-out}
+			.path{stroke-dashoffset:0;stroke-dasharray:6373;animation:drawin 3s 2s ease-in-out}
 
 			@keyframes drawin{from{stroke-dashoffset:6374}to{stroke-dashoffset:0}}
 		</style>
@@ -1156,37 +1156,37 @@ But we are more than a church…
 					<div class="outer-container">
 						<div class="width-fix">
 							<div class="video-wrapper">
-								<iframe class="films--video" id="video1" src="https://www.youtube.com/embed/YHsbBeDUpaE?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
+								<iframe class="films--video" id="video1" data-src="https://www.youtube.com/embed/YHsbBeDUpaE?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
 								</iframe>
 							</div>
 						</div>
 						<div class="width-fix">
 							<div class="video-wrapper">
-								<iframe class="films--video" src="https://www.youtube.com/embed/DrFQLosTdaw?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
+								<iframe class="films--video" data-src="https://www.youtube.com/embed/DrFQLosTdaw?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
 								</iframe>
 							</div>
 						</div>
 						<div class="width-fix">
 							<div class="video-wrapper">
-								<iframe class="films--video" src="https://www.youtube.com/embed/6Q7-kUDYSio?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
+								<iframe class="films--video" data-src="https://www.youtube.com/embed/6Q7-kUDYSio?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
 								</iframe>
 							</div>
 						</div>
 						<div class="width-fix">
 							<div class="video-wrapper">
-								<iframe class="films--video" src="https://www.youtube.com/embed/eD-srJCXz40?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
+								<iframe class="films--video" data-src="https://www.youtube.com/embed/eD-srJCXz40?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
 								</iframe>
 							</div>
 						</div>
 						<div class="width-fix">
 							<div class="video-wrapper">
-								<iframe class="films--video" src="https://www.youtube.com/embed/rIGOp_a5T-M?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
+								<iframe class="films--video" data-src="https://www.youtube.com/embed/rIGOp_a5T-M?enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always">
 								</iframe>
 							</div>
 						</div>
 						<div class="width-fix">
 							<div class="video-wrapper">
-								<iframe class="films--video" src="https://www.youtube.com/embed/HHgd4-aPvsM?enablejsapi=1"  frameborder="0" allowfullscreen="true" allowscriptaccess="always">
+								<iframe class="films--video" data-src="https://www.youtube.com/embed/HHgd4-aPvsM?enablejsapi=1"  frameborder="0" allowfullscreen="true" allowscriptaccess="always">
 								</iframe>
 							</div>
 						</div>
@@ -1345,5 +1345,15 @@ But we are more than a church…
 				</g>
 			</g>
 		</svg>
+
+		<script>
+			function init() {
+				var vidDefer = document.getElementsByTagName('iframe');
+				for (var i=0; i<vidDefer.length; i++) {
+					if(vidDefer[i].getAttribute('data-src')) {
+						vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+					} } }
+			window.onload = init;
+		</script>
 	</body>
 </html>
