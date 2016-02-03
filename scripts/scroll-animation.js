@@ -1,9 +1,11 @@
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
+$(document).ready(function(){
+	$('html, body').scrollTop(0);
 
-$(document).ready(function() {
-
+	$(window).on('load', function() {
+		setTimeout(function(){
+			$('html, body').scrollTop(0);
+		}, 0);
+	});
 	//	Drawing Animation
 	//	$(".path").css("stroke-dashoffset",$newUnit - $offsetUnit);
 
@@ -248,7 +250,7 @@ $(window).resize(function() {
 
 	});
 
-		//	Section Strikethrough
+	//	Section Strikethrough
 	$(window).on("scroll", function(){
 		if ($(window).width() <= 752){
 			if($(window).scrollTop() > 4300){
@@ -414,30 +416,30 @@ $(window).resize(function() {
 		}
 	});
 
-//	//	Automated Scroll
-//	$(function() {
-//		$('a[href*=#]:not([href=#])').click(function() {
-//			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//				var target = $(this.hash);
-//
-//				if (target.length) {
-//					if ($(window).width() <= 752){
-//						$('html,body').animate({
-//							scrollTop: target.offset().top - 75
-//						}, 450);
-//						return false;
-//					} else {
-//						$('html,body').animate({
-//							scrollTop: target.offset().top - 90
-//						}, 450);
-//						return false;
-//					}
-//				}
-//			}
-//		});
-//		$('#menu a').click(function () {
-//			$('#menu a').removeClass('active');
-//			$(this).addClass('active');
-//		});
-//	});
+	//	//	Automated Scroll
+	//	$(function() {
+	//		$('a[href*=#]:not([href=#])').click(function() {
+	//			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	//				var target = $(this.hash);
+	//
+	//				if (target.length) {
+	//					if ($(window).width() <= 752){
+	//						$('html,body').animate({
+	//							scrollTop: target.offset().top - 75
+	//						}, 450);
+	//						return false;
+	//					} else {
+	//						$('html,body').animate({
+	//							scrollTop: target.offset().top - 90
+	//						}, 450);
+	//						return false;
+	//					}
+	//				}
+	//			}
+	//		});
+	//		$('#menu a').click(function () {
+	//			$('#menu a').removeClass('active');
+	//			$(this).addClass('active');
+	//		});
+	//	});
 });
